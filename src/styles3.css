@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para alinhar os containers lado a lado */
+}
+
+.container-left,
+.container-right {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box; /* Considera o preenchimento como parte da largura */
+}
+
+.container-left {
+    background-color: #f2f2f2;
+}
+
+.container-left header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-left header a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+}
+
+.container-left header button {
+    background-color: #82b366; /* Verde claro */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.container-right {
+    background-color: #ddd;
+    float: right; /* Alinhar o container-right à direita */
+}
+
+.container-right h1,
+.container-right p,
+.container-right footer {
+    color: #333;
+    margin-top: 20px; /* Adiciona espaço acima do conteúdo */
+}
+
+.container-right footer {
+    display: inline-block;
+    background-color: #82b366; /* Verde claro */
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Empilhar os containers em telas menores */
+    }
+
+    .container-left,
+    .container-right {
+        width: 100%;
+        float: none;
+    }
+}
+
+.container-right h1,
+.container-right footer {
+    color: #333;
+    margin-top: 180px; /* Margem superior reduzida */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte alternativa */
+}
+
+.container-right h1 {
+    font-size: 28px; /* Tamanho de fonte para o título */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.container-right p {
+    margin-top: 5px;
+    font-family: 'Arial', sans-serif; /* Altere para a fonte desejada */
+    font-size: 18px; /* Tamanho de fonte para o parágrafo */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+.container-right footer {
+    margin-top: 5px; /* Margem superior reduzida */
+    font-size: 16px; /* Tamanho de fonte para o footer */
+    font-weight: bold; /* Texto em negrito */
+    padding: 8px 16px;
+    background-color: #82b366; /* Verde claro */
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
